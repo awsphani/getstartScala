@@ -34,6 +34,18 @@ object RetailMain {
 
     oikls.productIterator.foreach(println)  // will loop and print all elements of of class
 
+    val mrsums = new MapReduceOps()
+    val tot1= mrsums.sumsqs(1,100).toInt
+
+    println("\n Sum of squares all Even Numbers in a given range:" + tot1)
+
+
+    //val ois1 = mrsums.readFromFile("/Users/pkum60/IdeaProjects/getstart/src/main/resources/retail_db/order_items/part-00000")
+    val os1 = mrsums.stringManipulate("/Users/pkum60/IdeaProjects/getstart/src/main/resources/retail_db/orders/part-00000")
+
+
+
+
 
 
   }
